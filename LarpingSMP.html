@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            LarpingSMP
+        </title>
+        <link rel="icon" href="/larpingsmp.png" type="image/png"/>
+        <link rel="shortcut icon" href="/larpingsmp.png" type="image/png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            main{  
+                align-items: center;
+                justify-content: center;
+            }
+            body,html{
+                width:100vw;
+                background-color:darkblue;
+            }
+            header{
+                background-color:purple;
+                padding:5px;
+            }
+            header,header nav,header nav ul{
+                margin:0px;
+                width:100%
+            }
+            header nav ul{
+                padding:0px;
+                display:inline-block;
+            }
+            header nav ul li{
+                display:inline-block;
+                border:1px blue;
+                background-color: darkslateblue;
+                border-radius:3px;
+            }
+            header nav ul li a{
+                display:inline-block;
+                width:100%;
+                height:100%;
+                padding:8px;
+                color:paleturquoise;
+                text-decoration: none;              
+            }
+            header nav ul li:hover{
+                background-color:blueviolet;
+            }
+            * {
+                color:paleturquoise;
+            }
+            main{
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">LarpingSMP</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <noscript>No JavaScript? Good opsec!</noscript>
+        <main>
+            <h1>LarpingSMP</h1>
+			<a href="https://www.youtube.com/@LarpingSMP">Find us on YouTube!</a>
+            <hr>
+            <div id="about">
+                <h2>About</h2>
+                <p>We are a whitelisted invite-only server.</p>
+				<p>Note that it may take multiple tries to join because it sleeps if nobody is online for a while</p>
+                <h3>Our IP</h3>
+                <p><tt id="ip">mc.larpingsmp.net</tt> click to copy</p>
+                <h3>Our servers</h3>
+                <ol>
+                    <li>
+                        Lobby
+                    </li>
+                    <li>
+                        Vanilla SMP
+                    </li>
+                    <li>
+                        Creative
+                    </li>
+                    <li>
+                        more themed maps coming soon!
+                    </li>
+                </ol>
+                <h2>
+                    Our discord:
+                </h2>
+                <iframe src="https://discord.com/widget?id=1532814729486270494&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+            <div id="contact">
+                <a href="/cdn-cgi/l/email-protection#84e8e5f6f4edeae3f7e9f4c4e3e9e5ede8aae7ebe9">LarpingSMP [at] gmail [dot] com</a>
+                <p>contact ONLY if you are invited</p>
+            </div>
+        </main>
+        <footer>
+            Copyright 2026 Kevin Afryl. All rights reserved. No copying permitted.
+        </footer>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            const e = document.querySelector("#ip");
+            e.onclick = function() {
+            document.execCommand("copy");
+            }
+
+            e.addEventListener("copy", function(event) {
+            event.preventDefault();
+            if (event.clipboardData) {
+                event.clipboardData.setData("text/plain", e.textContent);
+                console.log(event.clipboardData.getData("text"))
+            }
+            });
+        </script>
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"255fc249129841e8bc31b97b45c0eb0f","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
