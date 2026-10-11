@@ -13,7 +13,7 @@
                 justify-content: center;
             }
             body,html{
-                width:100vw;
+                width:100%;
                 background-color:darkblue;
             }
             header{
@@ -52,6 +52,9 @@
                 align-items: center;
                 justify-content: center;
             }
+			.spotlight-group, .spotlight-group *{
+				width:100%;
+			}
         </style>
 	<script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.7.8/dist/spotlight.bundle.js"></script>
 		<style>
@@ -84,10 +87,10 @@
             <hr>
             <div id="about">
                 <h2>About</h2>
-                <p>We are a whitelisted (for anti-bot) server.</p>
+                <p>We are a <s>whitelisted</s> open MC server.</p>
 				<p>Note that it may take multiple tries to join because it sleeps if nobody is online for a while</p>
                 <h3>Our IP:</h3>
-                <p><tt id="ip">mc.larpingsmp.net</tt> click to copy</p>
+                <p><tt id="ip">mc.larpingsmp.net</tt></p>
 				<h2>FIND US:</h2>
 				<hr>
 				<iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://namemc.com/server/mc.larpingsmp.net/embed" width="728" height="90"></iframe>
@@ -113,15 +116,12 @@
                         Vanilla SMP
                     </li>
                     <li>
-                        Creative
+                        MHA (WIP)
                     </li>
                     <li>
                         more themed maps coming soon!
                     </li>
                 </ol>
-                <h2>
-                    Our discord:
-                </h2>
 				<hr>
 				<!-- Slideshow with https://github.com/nextapps-de/spotlight -->
 				<div class="spotlight-group">
@@ -153,8 +153,6 @@
 				        <img src="/media/spawn05.png">
 				    </a>
 				</div>
-				<hr>
-                <iframe src="https://discord.com/widget?id=1532814729486270494&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
             <div id="contact">
                 <a href="mailto:larpingsmp@gmail.com">LarpingSMP [at] gmail [dot] com</a>
